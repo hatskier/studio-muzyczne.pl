@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- logo on tab -->
+    <link rel="icon" href="img/logoTransparent.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Studio edukacji muzycznej</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.6.9/angular-sanitize.min.js"></script>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+  </head>
+  <script>
+    var myApp = angular.module('myApp',['ngSanitize']);
+  </script>
+  <body ng-app="myApp" id="page-top">
+<!--     <div id="loading">
+      <img id="loading-image" src="img/loader.gif" alt="Loading..." />
+    </div> -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class=" container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <img id="logo" src="img/logoTransparent.png">
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">O nas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#lessons">Zajęcia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#teachers">Nauczyciele</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#photos">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+            </li>
+            <li class="nav-item social">
+              <a class="nav-link" href="https://facebook.com" class="mx-2">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header -->
+    <header class="masthead">
+      <script>
+        window.onload = function() {
+          // console.log(screen.width);
+          // if (screen.width < 992) {
+          //   console.log("Hidding video");
+          //   $("#myVideo").hide();
+          //   // $("#guitarImage:hidden").css('visibility', 'visible');
+          // } else {
+          //   console.log("Hdding gutar image");
+          //   $("#guitarImage").hide();
+          //   // $("#myVideo:hidden").css('visibility', 'visible');
+          // }
+          
+        }
+      </script>
+      <video loop autoplay muted id="myVideo" style="margin-bottom: -10px;">
+        <source src="video/piano.mp4" type="video/mp4">
+      </video>
+      <!-- <img style="width: 100vw;" src="img/guitar-image.jpg" id="guitarImage"> -->
+    </header>
+
+    <div style="margin-top: 1vw; text-align: center" class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 style="color: #007061; margin-top: 2vw">
+            Nigdy nie jest za późno na to, aby poszerzyć swoją wiedzę i rozwijać własne zdolności!
+          </h2>
+            <blockquote>
+              <p style="color: #007061">Klasyczna muzyka była tym -czym się zachwyciłem poraz pierwszy . Kiedy byłem w przedszkolu prawie codziennie słuchałem Czajkowskiego. Czajowski i Claude Debussy są to osoby z którymi z olbrzymia chęcią mógłbym współpracować.</p>
+              <cite>Michael Jackson</cite>
+            </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-sm-12 mx-auto">
+            <h2 class="with-green-color mb-4">O nas</h2>
+            <h4 class="text-dark-50 big text-justify">Tworzymy przestrzeń dla zainteresowanych muzyką. Może to miejsce dla Ciebie?! Naszą główną zasadą w nauczaniu jest indywidualne podejście do ucznia prezentowane przez wysoko wyspecjalizowaną kadrę!
+              Starannie przekazujemy wypracowane przez lata umiejętności gry na instrumentach, śpiewie lub dyrygowaniu. Chcemy, aby jak najwięcej osób cieszyło się z możliwości muzykowania i rozwoju własnych talentów.
+              W uczniu, w pierwszej kolejności widzimy jego talent. Zadaniem nauczyciela jest dobranie metod nauczania, tak, aby były jak najlepiej dopasowane do potrzeb ucznia.
+              Nasze drzwi są otwarte dla wszystkich, niezależnie od wieku i poziomu zaawansowania.
+              Od adeptów sztuki oczekujemy jedynie gotowości do pracy.
+              Wszystko jest możliwe ale od nas zależy jak szybko to osiągniemy.
+              Zapraszamy na kursy!
+            </h4>
+            <br>
+            <a href="tel:+48575408255" class="btn btn-success" style="margin-top: 5vw; color: white;">
+              <h6>Zapisz się do przesłuchania</h6>
+              <h4 style="color: white">
+              (+48) 575-408-255
+              </h4>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Lessons section -->
+      <section ng-app="" id="lessons" class="lessons-section text-center">
+        <h2 class="with-green-color mb-4">Zajęcia</h2>
+        <div ng-init="lessons=[
+          {
+          title: 'Gra na fortepianie',
+          img: 'img/piano.jpg',
+          quote: 'Gra na fortepianie - to tak, jak siadając do internetu, myślisz, że minęło 5 minut, a przesiedziałeś całą noc.',
+          quoteAuthor: 'Hugh Laurie',
+          description: 'Każdy może nauczyć się grać na pianinie! Bez względu na wiek.
+          Fortepian- to wyjątkowy, wytworny instrument. Mistrzowska gra na nim prawdziwie zachwyca i oczarowuje. I nie ma nic dziwnego jeśli marzysz, aby umieć na nim grać!
+          Fortepian pozwala wykonywać dowolny utwór, przeznaczony na inny instrument melodyczny lub głos. Wszyscy słynni kompozytorzy doskonale opanowali grę na fortepianie.
+          Wszelkie muzyczne kierunki i style, włączając muzykę elektroniczną, można wykonać na pianinie, lub keybordzie.
+          Jeśli zamierzacie zająć się muzycznym rzemiosłem na długo, szczególnie polecamy rozpoczęcie nauki gry na fortepianie. Tu, zgłębicie tajniki harmonii przy jednoczesnym rozwoju ogólnomuzycznym.Prowadzimy również lekcje gry na keybordzie. 
+          Z czym wiąże się nauka gry na fortepianie?
+          Powiedzmy wprost - wymaga wiele czasu i nakładu sił. Jednak nauczyciel, ze swojej strony robi wszystko, aby zachęcić i przybliżyć uczniowi technikę samodzielnego ćwiczenia. Jest otwarty również na dobór repertuaru (klasyczny, współczesny, motywy muzyki filmowej).
+          Podczas lekcji opracowywane są:
+          - poprawne ustawienie rąk
+          - umiejętność czytania nut
+          - nauka formowania frazy
+          - nauka wspólnego muzykowania w duetach, trio, ensamblach
+          - elementy improwizacji
+          Serdecznie zapraszamy! '
+          },
+          {
+          title: 'Zajęcia gry na flecie',
+          img: 'img/flute.jpg',
+          quote: 'Flet - to jest magiczny dźwięk, to jest tajemny głos, szczęście i pokój, rozmowa z duszą...',
+          quoteAuthor: 'Tiatina G.',
+          description: 'Flet przy całej swojej prostocie ma bardzo długą i bogatą historię. Jest jednym z najstarszych instrumentów – ludzie używali go do wydobywania muzyki już od najdawniejszych czasów. Dzieci w wieku od 4 do 6 lat uczymy gry na flecie poprzecznym i prostym wg autorskiej metody nauczania. Podczas półgodzinnej lekcji stosujemy różnorodne aktywności: ćwiczenia oddechowe, śpiew, rytmikę, grę na instrumencie, słuchanie muzyki oraz zapoznajemy naszych uczniów z podstawowymi pojęciami muzycznymi. Lekcja odbywa się w atmosferze zabawy. 
+          Jakie są korzyści dla Państwa dzieci? 
+          Zdrowotne: gra na flecie poprzecznym pomaga w rozwoju układu oddechowego i dotlenia układ krwionośny. Pozytywnie wpływa także na pracę mózgu i koordynację ruchową.
+          Rozwój osobowości, a w szczególności takich cech jak: dociekliwość, operatywność i szybkość reakcji (improwizacja podczas występu), pracowitość, konsekwencja, zdyscyplinowanie, zorganizowane, obowiązkowość i odpowiedzialność. Wzmacnia także poczucie wartości oraz kształtuje silną wolę.
+          Zajmowanie się muzyką uczy odpowiedzialności oraz dobrego zarządzania czasem.
+          Regularne sceniczne występy od najmłodszych lat wpływają na pozbycie się strachu przed występami publicznymi.
+          Gra w zespole i orkiestrze uczy współpracy, pozwala małym dzieciom poczuć się częścią ważnego projektu i wpływa na kształtowanie się dziecka jako istoty społecznej.
+          Indywidualny kontakt z nauczycielem.'
+          },
+          {
+          title: 'Gitara',
+          img: 'img/guitar.jpg',
+          quote: 'Kiedy mój stryj przejechał do Kanady, znalazłem na strychu gitarę. Właśnie tak zyskałem nowego przyjaciela.',
+          quoteAuthor: 'Sting',
+          description: 'Zostań gitarzystą. Twój wiek nie gra roli!
+          Gitara to wyjątkowy instrument.
+          Ma szerokie zastosowanie w wielu gatunkach muzycznych. Jest instrumentem jednocześnie stawiającym wyzwania jak i przynoszącym szybki efekt zarówno początkującym jak i zaawansowanym muzykom. Wiele materiałów do nauki jest dostępnych w internecie (YT). Z łatwością można z nią podróżować. Kupno gitary, dzięki jej popularności, jest o wiele prostsze niż innych instrumentów. Na rynku wtórnym można nabyć ją za wiele niższą cenę.
+          Zapraszamy na lekcję gry na gitarze!
+          Proponujemy państwu indywidualny dobór repertuaru. Po nabyciu podstaw gry na instrumencie będziecie państwo cieszyć się dźwiękami ulubionych utworów.'},
+          {
+          title: 'Śpiew',
+          img: 'img/singing.jpg',
+          quote: 'Jedynie, co bywa lepsze za śpiewania - to więcej śpiewania!',
+          quoteAuthor: 'Ella Fildzer',
+          description: 'Naucz się śpiewać swoje ulubione utwory !
+          Głos - jest indywidualną cechą człowieka.
+          Na Ziemi nie istnieją 2 istoty o identycznym głosie.
+          Nasza ekipa ceni ten fakt!
+          Przy nauce śpiewu jako cel stawiamy sobie- wyzwolenie i wzmocnienie naturalnej
+          Wykładowcy są życzliwymi i wykwalifikowanymi ludźmi, którym zależy na budowaniu obustronnej relacji nauczyciel-uczeń. Nie spiesznie i jak najstaranniej tłumaczą wszelkie zawiłości związane ze sztuką śpiewu. 
+          Wspólną pracą pomagają osiągnąć sukces.
+
+          Podczas lekcji śpiewu pracujemy nad kształtowaniem:
+          - oddechu wokalnego
+          - słuchu muzycznego
+          - poczucia rytmu
+          dykcji
+          poprawnych nawyków śpiewaczych
+          indywidualnej barwy głosu 
+
+          Pracujemy również nad:
+          wyborem zindywidualizowanych ćwiczeń
+          - improwizacją, frazowaniem
+          wyrównaniem rejestrów
+          rozszerzeniem skali głosu
+          - stworzeniem własnego repertuaru, opracowaniem każdego utwory (akcenty słowne, oddechy) 
+          - sposob na opanowanie tremy
+
+          Zapewniamy organizację koncertów pod koniec każdego semestru.'
+          },
+          {
+          title: 'Gra na dzwonkach - zajęcia muzyczne  z dawnych czasów.',
+          img: 'img/bells-new.jpg',
+          quote: 'Jak gimnastyka prostuje ciało - tak muzyka prostuje duszę człowieka.',
+          quoteAuthor: 'W.Suchomlinski',
+          description: 'Instrumenty przypominające dzisiejsze dzwonki są znane z 13 i14 stulecia. W 15 wieku, w Anglii, zaczęto wyrabiać malutkie kopie kościelnych dzwonów, które słuzyły do zabaw muzycznych na dworze królewskim. Szczególnie popularnym stało się muzykowanie na ręcznych dzwonkach pod koniec 20 stulecia w USA. Głównym celem nauki gry na dzwonkach, jest rozbudzenie ciekawości muzycznej.
+          Diatoniczna struktura dzwonków odpowiada budowie gamy durowej, (czyli białych klawiszy fortepianu, zaczynając od dźwięku „do”).
+          Diatoniczne dzwonki rozwijają również umiejętność słyszenia harmonicznego oraz melodycznego. Uczą struktur muzycznych, czyli zasad budowy utworu, poczucia rytmu, rozwijają umiejętności motoryczne. Formują gotowość i umiejętność działania w zespole.
+          Wspólne muzykowanie, sprzyja rozwojowi jakże istotnych umiejętności, takich jak: skupienie uwagi, zdyscyplinowanie, odpowiedzialność za prawidłowe wykonanie swojej partii, kształtowanie twórczego stosunku do procesu nauczania. Tu każde dziecko staje się aktywnym uczestnikiem ensemblu, bez względu na poziom zaawansowania. Każdy czuje się ważny i na odpowiednim miejscu. Taki układ pomaga przezwyciężyć wstydliwość i wznieść się na wyżyny ekspresji muzycznej. Czego z całego serca wszystkim uczniom życzymy!',
+          },
+          {
+          title: 'Chór',
+          img: 'img/boy-song.jpg',
+          quote: 'Muzyka budzi w dziecku siły i zdolności, które inaczej nigdy by nie zakwitły.',
+          quoteAuthor: 'Karl Orff',
+          description: 'Śpiew chóralny istnieje w Polsce juz od czasów dawnych. Ludzie śpiewali przecież zarówno w chwilach odpoczynku jak i podczas pracy. Szczególnie podczas uroczystości, bez względu na jej charakter, zawodowy, państwowy czy kościelny - zgromadzeni śpiewali wspólnie, tworząc swoisty chór.
+          Nie przypadkowo rozpowszechniono śpiew chóralny. Tu, aby tworzyć jednolitą barwę i aby uzyskać określony przez dyrygenta cel, głosy zlewają się, pokonując naturalne różnice w głośności i barwie. Chórzyści wspólnie wypracowują dynamikę i artykulację utworu. Wspólny cel, konieczność współpracy, otwieranie się na nowe, jeszcze nie znane sobie możliwości umożliwiają stworzenie twórczej atmosfery i wykształcenie zdolności pracowania w zespole.
+          Śpiew w chórze rozwija nie tylko twórcze zdolności. Dotyka wielu aspektów pracy ze swoimi mocnymi i słabymi stronami. To samo tyczy się do umiejętności pracy w zespole. Reasumując każdy może wynieść z niego umiejętności pozamuzyczne. Nieprzypadkowo w biografiach wielu ludzi sukcesu napotykamy informację iż w dzieciństwie śpiewali w chórze.
+          Lekarze zauważają, że dzieci, które śpiewają w chórze rzadziej chorują. Śpiew łagodzi stres, pozwala się rozluźnić. Uczy głębokiego oddechu i jak gospodarować nagromadzonym powietrzem.
+          Pedagodzy potwierdzają fakt pozytywnego wpływu śpiewu na dykcję. Wielu logopedów poleca śpiew w pracy nad zniwelowaniem wad wymowy. Ponadto nauka muzki pomaga w uczeniu się matematyki i języków obcych.
+          Śpiew w chórze daje Ci możliwość rozwoju umiejętności emisyjnych, wzbudzenia kreatywności, rozwinięcia wyobraźni. Jest ważną częścią zdrowego stylu życia!
+          Proponujemy Państwu dwa zespoły. Chór dziecięcy i chór dla dorosłych. Repertuar składa się z powszechnie lubianych pieśni ludowych, piosenek dzieciństwa i młodości oraz utworów sakralnych i klasycznych. W miłej atmosferze pomożemy rozwijać wasze talenty!'
+          },
+          {
+          title: 'Teatr dla dzieci',
+          img: 'img/theatre-spectators.jpg',
+          quote: 'Dzieci – książęta uczuć, poeci i myśliciele.',
+          quoteAuthor: 'Janusz Korczak',
+          description: 'W teatrze dziecięcym chodzi przede wszystkim o łączenie dobrej zabawy z rozwojem. Dzieci otwierają się na świat innych. Ćwiczą pamięć i wymowę, obcują z literaturą, uczą się współdziałania w zespole.
+          Zajęcia tworzone są na bazie podstawowych technik aktorskich, muzycznych oraz tanecznych. Dzieci uczą się pracować z emocjami, od ich poznania do zdobycia umiejętności radzenia z nimi w trudnych sytuacjach. Podopieczni uwrażliwiają się na drugiego człowieka, ucząc się nie tylko pracy w grupie, ale również bycia sobą. Nowatorskie scenariusze są dostosowane do najmłodszych, tak aby praca była zabawą, a satysfakcja rodziców, owocem nauki. Najmłodsi będą odkrywać tajemnice zawodu aktora, poznają: \'kocie mruczando\', co wprawia w ruch głos, jak działa przestrzeń, co nas otacza i jak wykorzystać powietrze, gdy nuda wkracza na pokład.'
+          },
+          {
+          title: 'Kurs dla dyrygentów chórów',
+          img: 'img/conductor.jpg',
+          quote: 'Przyjdźcie do chóru a poczujecie harmonię!',
+          quoteAuthor: 'Robert Show Lauson',
+          description: 'Jesteś dyrygentem chóru w kościele lub w szkole? Chcesz być bardziej profesjonalny w tym co robisz? A może stawiasz pierwsze kroki w tej dziedzinie i chcesz dowiedzieć się wszystkiego o pracy z chórem, występach i przygotowaniach do nich? Przyjdź do nas!
+          Dyrygenci z wieloletnim doświadczeniem pomogą ci zgłębić tajniki dyrygentury! Pokażemy Ci jak używać rąk, ciała i mimiki podczas dyrygowania, przedstawimy techniki dyrygowania i schematy rytmiczne, nauczymy Cię współpracować z zespołem i podpowiemy jak zachowywać się na scenie. Pomożemy Ci także przygotować się do egzaminów na akademię muzyczną oraz do konkursów. Oferujemy zajęcia indywidualne oraz pracę z akomaniatorem.
+          Serdecznie zapraszamy!',
+          },
+          {
+          title: 'Gordonki (dzieci od 0 do 3,5 lat)',
+          img: 'img/babies.jpg',
+          quote: 'Dziecko do 1 roku życia odróżnia dźwięki muzyczne od nie muzycznych. Nigdy później nie słucha w taki sposób',
+          quoteAuthor: 'Edwin Elias Gordon',
+          description: '
+          <h1>asdasdsadas</h1>
+          Zajęcia opierają się na \'Sekwencyjnej Teorii Uczeni się Muzyki stworzonej przez E. E. Gordona\', której istotą jest stymulowanie naturalnego rozwoju wrażliwości muzycznej u małych dzieci poprzez dźwięki, rytmy oraz ruch. 
+          Amerykański Profesor Edwin Elias Gordon to muzyk jazzowy, pedagog, psycholog muzyki. Po przeprowadzeniu licznych badań i pracy z dziećmi stwierdził, że każdy człowiek rodzi się z jakimś poziomem uzdolnień muzycznych. 
+          Poziom ten – podobnie jak w przypadku innych cech – jest różny. I choć uzdolnienia muzyczne dziecka są wrodzone, ale to środowisko wywiera na nie olbrzymi wpływ. Profesor twierdzi, że dziecko do 1 roku życia odróżnia dźwięki muzyczne od nie muzycznych. Nigdy później nie słucha w taki sposób. Do 18 miesiąca życia spontanicznie śpiewa, w tym czasie równolegle rozwija mowę z rozwojem muzycznym. Wg niego pierwsze lata życia dziecka (łącznie z okresem prenatalnym) są najważniejsze w kształtowaniu języka muzyki.
+
+          Gordonki - jak wyglądają zajęcia? 
+          Strukturę zajęć tworzą odpowiednio łączone części śpiewane i rytmiczanki. Do każdej prowadzący dobiera odpowiedni ruch, tak żeby całość była swobodną zabawą dla dziecka. Melodie są śpiewane w różnych skalach muzycznych (dur, mol, skale modalne), natomiast rytmiczanki są wykonywane w różnym metrum (dwu-, trzy-, pięcio-, siedmio-, i dziesiecio-dzielnym). Po każdym utworze dzieci są zachęcane do powtórzenia prostych motywów melodycznych lub rytmicznych lub improwizacji własnych motywów w danej skali lub metrum.
+          Uczestnicy (dzieci z opiekunami) siadają na podłodze, w kółku, Najpierw rozbiegane a później coraz bardziej zainteresowane i skupione na tym co się dzieje. Zajęcia są przeznaczone dla dzieci od 6 do 36 miesięcy, najczęściej podzielone na trzy grupy wiekowe. Maluchy podczas zabawy nie są niczym skrępowane – mogą biegać po sali i swobodnie reagować na to, co się dzieje. A rodzice? Mają podążać za swoimi pociechami. Reagować na dźwięki, które wydają maluchy. Rozmawiać z Nimi w „ich” muzycznym języku.'
+          }
+        ];"></div>
+        <div ng-init="expanded = { }"></div>
+        <div class="lesson-row" style="text-align: center" ng-repeat="lesson in lessons">
+          <!-- <div class="row" ng-if="$index % 2 == 0">
+            <div class="col-lg-8">
+              <img class="{{images[$index] ? 'lesson-img-small' : 'lesson-img'}}" src='{{lesson.img}}'>
+            </div>
+            <div class="col-lg-3">
+              <h3 class="with-green-color">{{lesson.title}}</h3>
+              <blockquote class="big-quote">
+                  <p>{{lesson.quote}}</p>
+              </blockquote>
+              <cite>{{lesson.quoteAuthor}}</cite>
+              <br>
+              <br>
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo{{$index}}" ng-click="images[$index] = !images[$index]">{{images[$index] ? 'Zwiń' : 'Pokaż więcej'}}</button>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+              <p id="demo{{$index}}" class="collapse lesson-description">{{lesson.description}}</p>
+            </div>
+          </div>
+          
+          <div class="row col-lg-12" ng-if="$index % 2 == 1">
+            <div col-lg-1></div>
+            <div class="col-lg-3">
+              <h3 class="with-green-color">{{lesson.title}}</h3>
+              <blockquote class="big-quote">
+                  <p>{{lesson.quote}}</p>
+              </blockquote>
+              <cite>{{lesson.quoteAuthor}}</cite>
+              <br>
+              <br>
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo{{$index}}" ng-click="images[$index] = !images[$index]">{{images[$index] ? 'Zwiń' : 'Pokaż więcej'}}</button>
+            </div>
+            <div class="col-lg-8">
+              <img class="{{images[$index] ? 'lesson-img-small' : 'lesson-img'}}" src='{{lesson.img}}'>
+            </div>
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+              <p id="demo{{$index}}" class="collapse lesson-description">{{lesson.description}}</p>
+            </div>
+          </div> -->
+
+          <div class="row">
+            <div class="col-lg-2 col-sm-1"></div>
+            <div class="col-lg-8 col-sm-10">
+              <h3 class="with-green-color">{{lesson.title}}</h3>
+              <div class="lesson-container">
+
+                <img class="lesson-img" src='{{lesson.img}}'>
+
+                <div class="lesson-curtain animate" ng-class="(expanded[$index] ? 'lesson-curtain-expanded' : '')">
+                </div>
+                
+                <div class="lesson-quote">
+                  <blockquote class="big-quote">
+                    <p>{{lesson.quote}}</p>
+                  </blockquote>
+                  <cite>{{lesson.quoteAuthor}}</cite>
+                </div>
+
+                <div ng-show="expanded[$index]" class="lesson-description animate">
+                  <p class="text-justify" ng-bind-html="lesson.description"></p>
+                </div>
+
+                <img src="img/arrow_up.png" class='lesson-arrow animate' ng-class="(expanded[$index] ? 'lesson-arrow-down' : '')" ng-click="expanded[$index] = !expanded[$index];">
+
+              </div>
+            </div>
+              <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo{{$index}}" ng-click="images[$index] = !images[$index]">{{images[$index] ? 'Zwiń' : 'Pokaż więcej'}}</button> -->
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- Teachers section -->
+    <section ng-app="" id="teachers" class="teachers-section text-center">
+      <div class="row with-music-bg">
+        <div class="col-lg-8 col-sm-12 mx-auto">
+          <br>
+          <h2 class="with-green-color mb-5">Nauczyciele</h2>
+          <div ng-init="teachers=[
+            {
+            name: 'Julia Wronowska',
+            img: 'img/teachers/teacher1_new.jpg',
+            description: 'Absolwentka Akademii Muzycznej im. A.W. Nieżdanowej w Odessie na wydziale wokalno-chóralnym oraz podyplomowych studiów emisji głosu i chórmistrzostwa na Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy. W swojej dotychczasowej karierze prowadziła kilka chórów na Ukrainie (Berdyczów, Kijów) i w Polsce (Warszawa), a także pracowała się jako nauczycielka w szkołach muzycznych. Z powodzeniem występowała także jako artystka solowa koncertując w Szwajcarii, Czechach i na Słowacji. Uczestniczka licznych warsztatów i seminariów mistrzowskich (m.in.: CircleSongs, Muzyka gospel jako tworzywo do działań artystycznych w aspekcie pracy dyrygenta, Dyrygent na scenie).'},
+            {
+            name: 'Małgorzata Krynicka',
+            img: 'img/teachers/teacher9-new.jpg',
+            description: 'Absolwentka Uniwersytetu Muzycznego F. Chopina w Warszawie na kierunku dyrygentura chóralna oraz podyplomowych studiów emisji głosu i chórmistrzostwa na Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy. Dyrygentka i kierownik artystyczny różnych zespołów i chórów warszawskich. Uczestniczy w różnorodnych projektach wokalnych, prowadzi warsztaty wokalne, dyrygowania i emisji głosu, a także zajęcia umuzykalniające dla dzieci metodą Gordona. Współpracuje z wieloma teatrami i filharmoniami przy rozmaitych projektach muzycznych.'
+            },
+            {
+            name: 'Anastasija Gołowko',
+            img: 'img/teachers/teacher3_new.jpg',
+            description: 'Absolwentka Charkowskiego Państwowego Uniwersytetu Sztuk im. I. Kotlarewskiego w klasie fletu poprzecznego. Nauczyciel fletu w Charkowskiej Akademii Kultury oraz nauczycielka i kierowniczka działu instrumentów orkiestrowych w szkole muzycznej w Charkowie. Jest muzykiem aktywnie koncertującym, a także autorką artykułów dotyczących popularyzacji muzyki.'
+            },
+            {
+            name: 'Wiktor Bułanow',
+            img: 'img/teachers/teacher11_new.jpg',
+            description: 'Absolwent Uniwersytetu Sztuki im. I. Kotlarewskiego w Czarkowie na kierunku muzykologia i gitara klasyczna. Zajmuje się prywatną praktyką edukacyjną jako nauczyciel gry na gitarze klasycznej i elektrycznej. W przeszłości pracował w szkole muzycznej, a także prowadził zespół gitarowy, z którym regularnie koncertował. Jest też autorem wielu aranżacji gitarowych.'
+            },
+            {
+            name: 'Sergiusz Klukin',
+            img: 'img/teachers/teacher10-new.jpg',
+            description: 'Absolwent Charkowskiego Państwowego Uniwersytetu Sztuk Pięknych im. I. Kotlarewskiego w klasie gitary klasycznej prof. Władimira Docenko. Nauczyciel gitary klasycznej w szkole muzycznej w Warszawie. Pracował jako wykładowca gitary klasycznej w szkołach muzycznych oraz na akademii sztuk pięknych. Prowadził także zespół gitarowy w Charkowie. Uczestnik kursów mistrzowskich organizowanych w Olsztynie przez Adama Giskę.'
+            },
+            {
+            name: 'Daniela Grabowska',
+            img: 'img/teachers/teacher12_new.jpg',
+            description: 'Absolwentka wydziału aktorskiego Krakowskich Szkół Artystycznych w Krakowie. Pierwsze kroki stawiała na deskach krakowskich teatrów m.in. w Teatrze Sceny \'i\'. W latach 2016 -2018 była związana z Teatrem Studyjnym w Warszawie, zdobywając sukcesy takie jak: reprezentacja Polski na festiwalu w Grenoble 29 Recontres du Jeune Theatre Europeen. Nieustannie poszukuje do połamania nowych form i konwencji. Zainspirowana człowiekiem, stara się rzeźbić serce w odcieniach codzienności. Od najmłodszych lat jest zakochana w teatrze. Poza nim miłość wkłada w muzykę, taniec i szermierkę. Eksperymentuje z monodramami, była zaangażowana w liczne happeningi wystawiane na krakowskim rynku. Doświadczenie instruktorskie zdobywała prowadząc zajęcia taneczne i teatralne podczas imprez okolicznościowych oraz w jednym z krakowskich Domów Kultury.'
+            }
+          ]"></div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-8 teacher-card"  ng-repeat="teacher in teachers">
+              <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                  <div class="frontside">
+                    <div class="teacher-card-2 card">
+                      <img class=" card-img-top card-img-top-2" src="{{teacher.img}}" alt="teacher image">
+                      <div class="card-body ">
+                        <h4 class="card-title teacher-name">{{teacher.name}}</h4>
+                        <p class="card-text">{{teacher.info}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="backside">
+                    <div class="teacher-card-2 card">
+                      <div   class="card-header with-notes-background">
+                        <h4 class="teacher-name" >
+                        {{teacher.name}}
+                      </h4>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">{{teacher.description}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
+    </section>
+    <!-- Photos section -->
+    <section id="photos" class="photos-section text-center">
+      <h2 class="with-green-color text">Galeria</h2>
+      <div class="row">
+            <div class="col-lg-12"><iframe class="iframe-youtube" src="https://www.youtube.com/embed/ToGbcIBehAI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            <div class="col-lg-12"><iframe class="iframe-youtube" src="https://www.youtube.com/embed/CVuX1yYw46U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            
+        <!-- <img src="img/ipad.png" class="img-fluid" alt=""> -->
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-10 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Adres</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Warszawa (Wawer), ul. Poezji 19, 4piętro</div>
+                <div class="small text-black-50">Pn. - pt. 8.00-21.30</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-10 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-envelope text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Email</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">
+                  <a href="#">Muzyka1wa@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-10 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+              <div class="card-body text-center">
+                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Telefon</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">+48 575 408 255</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="social d-flex justify-content-center">
+          <a href="#" class="mx-2">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com" class="mx-2">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <div class="container">
+        Copyright &copy; studio-muzyczne.pl 2018
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.js"></script>
+  </body>
+</html>
