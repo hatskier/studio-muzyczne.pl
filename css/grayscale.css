@@ -286,8 +286,10 @@ footer {
   padding: 5rem 0;
 }
 
-#myVideo {
-  width: 100vw;
+@media only screen and (min-width: 992px) {
+  #myVideo {
+    width: 100vw;
+  }
 }
 
 #logo {
@@ -503,7 +505,7 @@ border-radius: 0;
   position: absolute;
   top: 3vw;
   color: white;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 }
 
 .animate {
@@ -532,6 +534,13 @@ border-radius: 0;
 }
 
 @media only screen and (max-width: 992px) {
+
+  #myVideo {
+    margin-top: 91px;
+    /*height: 50vw;*/
+    height: 300px;
+    /*height: 1000px;*/
+  }
 
   .image-flip {
     height: 80vw;
