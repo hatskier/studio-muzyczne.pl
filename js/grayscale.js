@@ -1,3 +1,4 @@
+
 (function($) {
   "use strict"; // Start of use strict
 
@@ -64,3 +65,59 @@
   // auto scrolling end
 
 })(jQuery); // End of use strict
+
+
+// function for clicks on lesson images, arrows and teacher cards
+function timeout() {
+  setTimeout( function(){
+    var lessonImages = document.querySelectorAll('.lesson-click');
+    var lessonsTextMobile = document.querySelectorAll('.lesson-text-mobile');
+
+    var lessonArrows = document.querySelectorAll('.lesson-arrow');
+    var lessonQuotes = document.querySelectorAll('.lesson-quote');
+
+    var teacherCards = document.querySelectorAll('.teacher-card');
+    var teacherNames = document.querySelectorAll('.card-title');
+    var cardsTextMobile = document.querySelectorAll('.card-text-mobile');
+    
+    for (var i = 0; i < lessonImages.length; i++) {
+      lessonClick(lessonImages[i], lessonsTextMobile[i]);
+    }
+
+    for (var i = 0; i < lessonArrows.length; i++) {
+      arrowClick(lessonArrows[i], lessonQuotes[i]);
+    }
+    
+    for (var i = 0; i < teacherCards.length; i++) {
+      teacherClick(teacherCards[i], teacherNames[i], cardsTextMobile[i]);
+    }
+
+    function lessonClick(lessonImage, lessonTextMobile) {
+      if (window.matchMedia('(max-width: 1023px)').matches) {
+        lessonImage.addEventListener('click', function() {
+          lessonTextMobile.classList.toggle('element-shown');
+          lessonImage.classList.toggle('arrow-up');
+        })
+      } 
+    }
+
+    function arrowClick(lessonArrow, lessonQuote) {
+      if (window.matchMedia('(min-width: 1024px)').matches) {
+        lessonArrow.addEventListener('click', function() {
+          lessonQuote.classList.toggle('element-none');
+        })
+      } 
+    }
+
+    function teacherClick(teacherCard, teacherName, cardTextMobile) {
+      if (window.matchMedia('(max-width: 991px)').matches) {
+        teacherCard.addEventListener('click', function() {
+          cardTextMobile.classList.toggle('element-shown');
+          teacherName.classList.toggle('arrow-up');
+        })
+      } 
+    }
+  }, 100 );
+}
+
+timeout();
