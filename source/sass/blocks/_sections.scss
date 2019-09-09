@@ -1,0 +1,49 @@
+.gallery-row {
+  min-width: 320px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0
+}
+
+.gallery-video {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0; 
+
+  @media (max-width: 576px) {
+    min-height: 300px;
+  }
+}
+
+.iframe-youtube {
+  @media (max-width: 576px) {
+    width: 90%;
+    height: 90%;
+  }
+}
+
+.about-section {
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+.about-section p {
+  margin-bottom: 0;
+}
+
+.lessons-section {
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+.teachers-section {
+  padding-top: 3rem;
+  padding-bottom: 0;
+}
+
+.photos-section {
+  padding-top: 2rem;
+  background-color: transparent;
+}
+
