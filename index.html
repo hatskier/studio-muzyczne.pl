@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -63,7 +65,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
             </li>
             <li class="nav-item social">
-              <a class="nav-link" href="https://www.facebook.com/Muzyka-rozmowa-serc-112312603471943/">
+              <a class="nav-link" target="_blank" href="https://www.facebook.com/Muzyka-rozmowa-serc-112312603471943/">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
@@ -128,7 +130,8 @@
     <!-- Lessons section -->
     <section ng-app="" id="lessons" class="lessons-section text-center">
       <h2 class="with-green-color mb-4">Zajęcia</h2>
-      <div ng-init="lessons=
+      <!-- Remove commented -->
+      <!-- <div ng-init="lessons=
         [
           {
           title: 'Gra na pianino dla dorosłych',
@@ -372,33 +375,39 @@
           </div>'
           }
         ];">
-      </div>
+      </div> -->
       <div ng-init="expanded = { }"></div>
-      <div class="lessons-row" style="text-align: center" ng-repeat="lesson in lessons">
-        <div class="row lesson-row">
-          <div class="col-12 col-lg-8 lesson-teachers">
-            <h3 class="with-green-color">{{lesson.title}}</h3>
-            <div class="lesson-container lesson-click container">
-              <img class="lesson-img" src="{{lesson.img}}">
-              <div class="lesson-curtain animate" ng-class="(expanded[$index] ? 'lesson-curtain-expanded' : '')">
+      {% for lesson in site.data.lessons %}
+        <div class="lessons-row" style="text-align: center">
+          <div class="row lesson-row">
+            <div class="col-12 col-lg-8 lesson-teachers">
+              <h3 class="with-green-color">{{lesson.title}}</h3>
+              <div class="lesson-container lesson-click container">
+                <img class="lesson-img" src="{{lesson.img}}">
+                <div class="lesson-curtain animate" ng-class="(expanded['{{lesson.title}}'] ? 'lesson-curtain-expanded' : '')">
+                </div>
+                <div class="lesson-quote">
+                  <blockquote class="big-quote">
+                    <p>{{lesson.quote}}</p>
+                  </blockquote>
+                  <cite>{{lesson.quoteAuthor}}</cite>
+                </div>
+                <div ng-show="expanded['{{lesson.title}}']" class="lesson-description animate">
+                  <div class="text-justify">
+                    {{lesson.description}}  
+                  </div>
+                </div>
+                <img src="img/arrow_up.png" class="lesson-arrow animate" ng-class="(expanded['{{lesson.title}}'] ? 'lesson-arrow-down' : '')" ng-click="expanded['{{lesson.title}}'] = !expanded['{{lesson.title}}'];">
               </div>
-              <div class="lesson-quote">
-                <blockquote class="big-quote">
-                  <p>{{lesson.quote}}</p>
-                </blockquote>
-                <cite>{{lesson.quoteAuthor}}</cite>
+              <div class="lesson-container container">
+                <div class="lesson-text-mobile">
+                  {{lesson.description}}
+                </div>
               </div>
-              <div ng-show="expanded[$index]" class="lesson-description animate">
-                <p class="text-justify" ng-bind-html="lesson.description"></p>
-              </div>
-              <img src="img/arrow_up.png" class="lesson-arrow animate" ng-class="(expanded[$index] ? 'lesson-arrow-down' : '')" ng-click="expanded[$index] = !expanded[$index];">
-            </div>
-            <div class="lesson-container container">
-              <p class="lesson-text-mobile" ng-bind-html="lesson.description"></p>
             </div>
           </div>
         </div>
-      </div>
+      {% endfor %}
     </section>
     <!-- Teachers section -->
     <section ng-app="" id="teachers" class="teachers-section text-center">
@@ -408,65 +417,37 @@
           <div class="col-sm-12 col-lg-12 teachers-col">
             <br>
             <h2 class="with-green-color mb-5">Nauczyciele</h2>
-            <div ng-init="teachers=[
-              {
-              name: 'Julia Chmielewska',
-              img: 'img/teachers/teacher1_new.jpg',
-              description: 'Absolwentka Akademii Muzycznej im. A.W. Nieżdanowej w Odessie na wydziale wokalno-chóralnym oraz podyplomowych studiów emisji głosu i chórmistrzostwa na Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy. W swojej dotychczasowej karierze prowadziła kilka chórów na Ukrainie (Berdyczów, Kijów) i w Polsce (Warszawa), a także pracowała się jako nauczycielka w szkołach muzycznych. Z powodzeniem występowała także jako artystka solowa koncertując w Szwajcarii, Czechach i na Słowacji. Uczestniczka licznych warsztatów i seminariów mistrzowskich (m.in.: CircleSongs, Muzyka gospel jako tworzywo do działań artystycznych w aspekcie pracy dyrygenta, Dyrygent na scenie).'},
-              {
-              name: 'Małgorzata Krynicka',
-              img: 'img/teachers/teacher9-new.jpg',
-              description: 'Absolwentka Uniwersytetu Muzycznego F. Chopina w Warszawie na kierunku dyrygentura chóralna oraz podyplomowych studiów emisji głosu i chórmistrzostwa na Akademii Muzycznej im. Feliksa Nowowiejskiego w Bydgoszczy. Dyrygentka i kierownik artystyczny różnych zespołów i chórów warszawskich. Uczestniczy w różnorodnych projektach wokalnych, prowadzi warsztaty wokalne, dyrygowania i emisji głosu, a także zajęcia umuzykalniające dla dzieci metodą Gordona. Współpracuje z wieloma teatrami i filharmoniami przy rozmaitych projektach muzycznych.'
-              },
-              {
-              name: 'Anastasija Gołowko',
-              img: 'img/teachers/teacher3_new.jpg',
-              description: 'Absolwentka Charkowskiego Państwowego Uniwersytetu Sztuk im. I. Kotlarewskiego w klasie fletu poprzecznego. Nauczyciel fletu w Charkowskiej Akademii Kultury oraz nauczycielka i kierowniczka działu instrumentów orkiestrowych w szkole muzycznej w Charkowie. Jest muzykiem aktywnie koncertującym, a także autorką artykułów dotyczących popularyzacji muzyki.'
-              },
-              {
-              name: 'Wiktor Bułanow',
-              img: 'img/teachers/teacher11_new.jpg',
-              description: 'Absolwent Uniwersytetu Sztuki im. I. Kotlarewskiego w Czarkowie na kierunku muzykologia i gitara klasyczna. Zajmuje się prywatną praktyką edukacyjną jako nauczyciel gry na gitarze klasycznej i elektrycznej. W przeszłości pracował w szkole muzycznej, a także prowadził zespół gitarowy, z którym regularnie koncertował. Jest też autorem wielu aranżacji gitarowych.'
-              },
-              {
-              name: 'Sergiusz Klukin',
-              img: 'img/teachers/teacher10-new.jpg',
-              description: 'Absolwent Charkowskiego Państwowego Uniwersytetu Sztuk Pięknych im. I. Kotlarewskiego w klasie gitary klasycznej prof. Władimira Docenko. Nauczyciel gitary klasycznej w szkole muzycznej w Warszawie. Pracował jako wykładowca gitary klasycznej w szkołach muzycznych oraz na akademii sztuk pięknych. Prowadził także zespół gitarowy w Charkowie. Uczestnik kursów mistrzowskich organizowanych w Olsztynie przez Adama Giskę.'
-              },
-              {
-              name: 'Daniela Grabowska',
-              img: 'img/teachers/teacher12_new.jpg',
-              description: 'Absolwentka wydziału aktorskiego Krakowskich Szkół Artystycznych w Krakowie. Pierwsze kroki stawiała na deskach krakowskich teatrów m.in. w Teatrze Sceny \'i\'. W latach 2016 -2018 była związana z Teatrem Studyjnym w Warszawie, zdobywając sukcesy takie jak: reprezentacja Polski na festiwalu w Grenoble 29 Recontres du Jeune Theatre Europeen. Nieustannie poszukuje do połamania nowych form i konwencji. Zainspirowana człowiekiem, stara się rzeźbić serce w odcieniach codzienności. Od najmłodszych lat jest zakochana w teatrze. Poza nim miłość wkłada w muzykę, taniec i szermierkę. Eksperymentuje z monodramami, była zaangażowana w liczne happeningi wystawiane na krakowskim rynku. Doświadczenie instruktorskie zdobywała prowadząc zajęcia taneczne i teatralne podczas imprez okolicznościowych oraz w jednym z krakowskich Domów Kultury.'
-              }
-            ]"></div>
+
             <div class="row teacher-row">
-              <div class=" col-12 col-md-6 col-xl-4 teacher-card" ng-repeat="teacher in teachers">
-                <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
-                  <div class="mainflip">
-                    <div class="frontside">
-                      <div class="teacher-card-2 card">
-                        <img class=" card-img-top card-img-top-2" src="{{teacher.img}}" alt="teacher image">
-                        <div class="card-body ">
-                          <h4 class="card-title teacher-name">{{teacher.name}}</h4>
-                          <p class="card-text-mobile">{{teacher.description}}</p>
+              {% for teacher in site.data.teachers %}
+                <div class=" col-12 col-md-6 col-xl-4 teacher-card">
+                  <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                    <div class="mainflip">
+                      <div class="frontside">
+                        <div class="teacher-card-2 card">
+                          <img class=" card-img-top card-img-top-2" src="{{teacher.img}}" alt="teacher image">
+                          <div class="card-body ">
+                            <h4 class="card-title teacher-name">{{teacher.name}}</h4>
+                            <p class="card-text-mobile">{{teacher.bio}}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="backside">
-                      <div class="teacher-card-2 card">
-                        <div class="card-header with-notes-background">
-                          <h4 class="teacher-name">
-                          {{teacher.name}}
-                        </h4>
-                        </div>
-                        <div class="card-body">
-                          <p class="card-text">{{teacher.description}}</p>
+                      <div class="backside">
+                        <div class="teacher-card-2 card">
+                          <div class="card-header with-notes-background">
+                            <h4 class="teacher-name">
+                            {{teacher.name}}
+                          </h4>
+                          </div>
+                          <div class="card-body">
+                            <p class="card-text">{{teacher.bio}}</p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              {% endfor %}
             </div>
           </div>
         </div>
@@ -501,7 +482,7 @@
                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
                 <h4 class="text-uppercase m-0">Adres</h4>
                 <hr class="my-4">
-                <div class="small text-black-50">Warszawa (Wawer), ul. Poezji 19, 4piętro</div>
+                <div class="small text-black-50">Warszawa (Falenica), ul. Poezji 19, 4 piętro</div>
                 <div class="small text-black-50">Pn. - pt. 8.00-21.30</div>
               </div>
             </div>
@@ -513,7 +494,7 @@
                 <h4 class="text-uppercase m-0">Email</h4>
                 <hr class="my-4">
                 <div class="small text-black-50">
-                  <a href="#">Muzyka1wa@gmail.com</a>
+                  <a href="mailto:biuro@muzyka-falenica.pl">biuro@muzyka-falenica.pl</a>
                 </div>
               </div>
             </div>
@@ -530,10 +511,10 @@
           </div>
         </div>
         <div class="social d-flex justify-content-center">
-          <a href="#" class="mx-2">
+          <!-- <a href="#" class="mx-2">
             <i class="fab fa-twitter"></i>
-          </a>
-          <a href="https://www.facebook.com/Muzyka-rozmowa-serc-112312603471943/m" class="mx-2">
+          </a> -->
+          <a target="_blank" href="https://www.facebook.com/Muzyka-rozmowa-serc-112312603471943/" class="mx-2">
             <i class="fab fa-facebook-f"></i>
           </a>
         </div>
@@ -547,7 +528,7 @@
     </footer>
     <div class="buttons">
 
-      <a href="mailto:Muzyka1wa@gmail.com" class="email-bt">
+      <a href="mailto:biuro@muzyka-falenica.pl" class="email-bt">
         <div class="text-call">
           <i class="fa fa-envelope" aria-hidden="true"></i>
           <span class="visually-hidden">Zapisz<br>email</span>
@@ -569,7 +550,7 @@
         <span class="visually-hidden">(+48) 575-408-255</span>
       </a>
 
-      <a href="mailto:Muzyka1wa@gmail.com" class="btn circle-button circle-button-email animating">
+      <a href="mailto:biuro@muzyka-falenica.pl" class="btn circle-button circle-button-email animating">
         <span class="visually-hidden">Zapisz się do przesłuchania przez e-mail</span>
       </a> -->
     </div>
