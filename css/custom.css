@@ -1,0 +1,23 @@
+#map-container {
+  width: 60vw;
+  height: 30vw;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  #map-container {
+    width: 90vw;
+    height: 60vw;
+  }
+}
+
+.card {
+  border: 1px solid lightblue;
+  border-radius: 4px;
+}
+
+.card-img-top-2 {
+  border-radius: 4px 4px 0 0;
+}

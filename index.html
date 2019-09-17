@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom styles for this template -->
     <link href="css/grayscale.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
   </head>
   <script>
     var myApp = angular.module('myApp',['ngSanitize']);
@@ -476,19 +477,17 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section bg-black">
-        <section id="map">
-          <div class="row">
-            <div class="col-md-6 offset-md-3 offset-sm-0">
-              <div style="margin: auto;" class="mapouter"><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=Warszawa%20(Falenica)%2C%20ul.%20Poezji%2019&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-            </div>
-          </div>
-        </section>
 
       <div class="container">
         <div class="row">
-          <!-- <div class="col-md-12">
-            
-          </div> -->
+          <div class="col-md-12">
+            <div style="margin: auto;" class="mapouter">
+              <div id="map-container" >
+                <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Warszawa%20(Falenica)%2C%20ul.%20Poezji%2019&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no">
+                </iframe>
+              </div>
+            </div>
+          </div>
 
           <div class="col-md-4 col-sm-12 mb-3 mb-md-0">
             <div class="card py-4 h-100">
