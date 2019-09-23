@@ -635,10 +635,10 @@ html, body {
     .lesson-click::before {
       position: absolute;
       content: "";
-      width: 25px;
-      height: 25px;
+      width: 15px;
+      height: 15px;
       bottom: 5px;
-      right: 10px;
+      right: 5px;
       background-image: url("../img/icons/arrow-white.png");
       background-repeat: no-repeat;
       background-position: center;
@@ -687,7 +687,7 @@ html, body {
       display: block; } }
 
 .lesson-arrow-down {
-  transform: rotate(180deg) scale(0.5);
+  transform: rotate(180deg);
   right: 5px;
   bottom: 5px; }
 
@@ -829,10 +829,10 @@ html, body {
     .card-title::before {
       position: absolute;
       content: "";
-      width: 25px;
-      height: 25px;
-      bottom: -2px;
-      right: -10px;
+      width: 15px;
+      height: 15px;
+      bottom: 3px;
+      right: 3px;
       opacity: 0.8;
       background-image: url("../img/icons/arrow-black.png");
       background-repeat: no-repeat;

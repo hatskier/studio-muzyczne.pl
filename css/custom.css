@@ -8,7 +8,7 @@
 
 @media (max-width: 1024px) {
   #map-container {
-    width: 90vw;
+    width: 80vw;
     height: 60vw;
   }
 }
@@ -20,4 +20,25 @@
 
 .card-img-top-2 {
   border-radius: 4px 4px 0 0;
+}
+
+.card-title.teacher-name {
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+.card-text {
+  text-align: left;
+}
+
+.card-header.with-notes-background .teacher-name {
+  margin-top: 10px;
+}
+
+.card-text-mobile {
+  text-align: left;
+}
+
+.lesson-quote {
+  padding: 5px;
 }
